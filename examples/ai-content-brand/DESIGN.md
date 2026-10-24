@@ -82,8 +82,10 @@ This guide lets any person or tool apply the system without the conversation tha
 | C6 | Brand colour ramps | Six OKLCH steps each (tint, pastel, mid, deep, darker, ink). Coral #FFEDE9 #FFB3A3 #E68774 #BC4C31 #703D33 #3E1F18; butter #FAF2D5 #FFE58F #C3A118 #8C7200 #5D4B00 #332800; lilac #F3EFFF #D9C8FF #AD97DB #7D66A7 #52456A #2C243B | bespoke | Built from the exact C1/C2 pastels and the C5 deep coral | 3 One idea, one glance (enough steps for charts) | Picked six-step ramps | 2026-10-24 |
 | C7 | Semantic roles | Page: paper #FAF6EC by default; white #FFFFFF page variant for data-heavy or infographic slides (cards switch to paper #FAF6EC). Cards: #FFFAEE with hairline #E6DFCF for everyday content; ink-outlined (1.5px #1A1712) for the single key takeaway, checklist or fix. Text: ink #1A1712, muted #6B6152, deep coral #BC4C31 for emphasis, butter #FFE58F highlight | bespoke | Combination of options 2, 3 and 5; ink outline from Elementor's black and white edge | 3 One idea, one glance (the ink outline always marks the one idea) | Wanted both page colours and both card styles, with clear jobs | 2026-10-24 |
 | C8 | Status colours (good versus bad) | No status hues. "Before" or "bad": muted hairline card with muted text. "After" or "good": ink-outlined card with butter highlight on the winning phrase. Symbols optional | bespoke | Reuses C5 highlighter and C7 outline | 3 One idea, one glance; 5 Excited, not hyped | Picked option 5; avoids a "bad" rose sitting next to the coral signature | 2026-10-24 |
+| C9 | Dark slides | No dark slides for LinkedIn; always light. Revisit dark mode when a website or talks need it | bespoke | LinkedIn shows images as designed in both feed modes | 3 One idea, one glance (simplicity) | Picked option 2 | 2026-10-24 |
 
 ## 11. Not yet decided
+- Dark mode (C9): revisit for a website or talks.
 - Infographic language layer and graph-paper grid layer: offered from the one-pager inspiration, user not yet decided.
 - User feedback for type decisions: dislikes the monospace used for the stat line ("3 hrs saved") in the C1 previews.
 
