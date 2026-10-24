@@ -86,10 +86,12 @@ This guide lets any person or tool apply the system without the conversation tha
 | C9 | Dark slides | No dark slides for LinkedIn; always light. Revisit dark mode when a website or talks need it | bespoke | LinkedIn shows images as designed in both feed modes | 3 One idea, one glance (simplicity) | Picked option 2 | 2026-10-24 |
 | C10 | Chart palette | Coral #FFB3A3 for the one value that matters; every other series in paper grey #D7D0C1; gridlines and axes #D7D0C1 | bespoke | Principle 3 and the C1/C4 choices | 3 One idea, one glance | Picked option 2 | 2026-10-24 |
 | T1 | Type strategy | One characterful grotesk family for everything; weight contrast does the work (heavy headlines, regular body). No monospace | bespoke | Elementor uses one family (Roobert) throughout | 3 One idea, one glance; 5 Excited, not hyped | Picked option 2; earlier disliked monospace for stats | 2026-10-24 |
+| T2 | Type family | Onest (Google Fonts, SIL Open Font License, weights 100–900, wide language coverage) for display and text | bespoke | Research: free faces with Roobert's qualities; most readable at phone size | 3 One idea, one glance; 4 Face first (clear, human) | Picked Onest over Schibsted, Gabarito, Rethink and the Plus Jakarta default | 2026-10-24 |
+| T3 | Text face | Onest (same family, per T1) | bespoke | T1 | 3 One idea, one glance | Follows from T1 | 2026-10-24 |
+| T4 | Data or code face | Not needed: numerals set in Onest; monospace disliked | bespoke | User feedback on C1 previews | 3 One idea, one glance | User disliked monospace for stats | 2026-10-24 |
 
 ## 11. Not yet decided
 - Dark mode (C9): revisit for a website or talks.
-- User feedback for type decisions: dislikes the monospace used for the stat line ("3 hrs saved") in the C1 previews.
 
 ## 12. Inspirations and changelog
 | Date | Change | Inspiration | Decisions affected |
