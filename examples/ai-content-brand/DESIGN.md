@@ -74,10 +74,11 @@ This guide lets any person or tool apply the system without the conversation tha
 
 | ID | Decision | Choice | Label | Source | Principle | User's reason | Date |
 |---|---|---|---|---|---|---|---|
-| C2 | Primary brand colour | [value] | bespoke / AI default | [brief, inspiration or research] | [principle] | [reason, if given, or "delegated"] | [date] |
+| C1 | Colour strategy | Pop pastels in two roles: pastel backgrounds for covers and section slides; black and white with pastel accents for content slides. Palette direction: coral #FFB3A3, butter #FFE58F, lilac #D9C8FF, with black ink | bespoke | Elementor screenshots (black and white base, small pastel pops), Elementor lilac, butter from tile pop option | 2 Stand out from the feed; 5 Excited, not hyped | Preferred pop pastels over the darker and louder first-round options; chose option 10 of three rounds | 2026-10-24 |
 
 ## 11. Not yet decided
-- [Decision IDs and layers still open]
+- Infographic language layer and graph-paper grid layer: offered from the one-pager inspiration, user not yet decided.
+- User feedback for type decisions: dislikes the monospace used for the stat line ("3 hrs saved") in the C1 previews.
 
 ## 12. Inspirations and changelog
 | Date | Change | Inspiration | Decisions affected |
