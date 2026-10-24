@@ -63,7 +63,8 @@ This guide lets any person or tool apply the system without the conversation tha
 [Photography, illustration, icons, graphic devices, voice, words to use and avoid, copy patterns.]
 
 ## 8. Additional layers
-[Layers accepted from inspirations, each with rules and source.]
+- **Infographic language** (accepted 2026-10-24, from the one-pager inspiration): a reusable kit of mini charts, dot grids and icon groups. Rules to be decided after imagery and voice.
+- **Graph-paper grid** (accepted 2026-10-24, from the one-pager inspiration): a faint grid behind content. Rules to be decided after imagery and voice.
 
 ## 9. Using the system in other tools
 - **Code:** import `tokens.json` with a token tool such as Style Dictionary or Terrazzo to generate CSS variables or platform code.
@@ -87,7 +88,6 @@ This guide lets any person or tool apply the system without the conversation tha
 
 ## 11. Not yet decided
 - Dark mode (C9): revisit for a website or talks.
-- Infographic language layer and graph-paper grid layer: offered from the one-pager inspiration, user not yet decided.
 - User feedback for type decisions: dislikes the monospace used for the stat line ("3 hrs saved") in the C1 previews.
 
 ## 12. Inspirations and changelog
