@@ -85,6 +85,7 @@ This guide lets any person or tool apply the system without the conversation tha
 | C8 | Status colours (good versus bad) | No status hues. "Before" or "bad": muted hairline card with muted text. "After" or "good": ink-outlined card with butter highlight on the winning phrase. Symbols optional | bespoke | Reuses C5 highlighter and C7 outline | 3 One idea, one glance; 5 Excited, not hyped | Picked option 5; avoids a "bad" rose sitting next to the coral signature | 2026-10-24 |
 | C9 | Dark slides | No dark slides for LinkedIn; always light. Revisit dark mode when a website or talks need it | bespoke | LinkedIn shows images as designed in both feed modes | 3 One idea, one glance (simplicity) | Picked option 2 | 2026-10-24 |
 | C10 | Chart palette | Coral #FFB3A3 for the one value that matters; every other series in paper grey #D7D0C1; gridlines and axes #D7D0C1 | bespoke | Principle 3 and the C1/C4 choices | 3 One idea, one glance | Picked option 2 | 2026-10-24 |
+| T1 | Type strategy | One characterful grotesk family for everything; weight contrast does the work (heavy headlines, regular body). No monospace | bespoke | Elementor uses one family (Roobert) throughout | 3 One idea, one glance; 5 Excited, not hyped | Picked option 2; earlier disliked monospace for stats | 2026-10-24 |
 
 ## 11. Not yet decided
 - Dark mode (C9): revisit for a website or talks.
