@@ -20,8 +20,11 @@ This guide lets any person or tool apply the system without the conversation tha
 
 ## 2. Design principles
 
-1. **[Principle]:** [the choice the system makes] — [what it gives up].
-2. …
+1. **Built, not imagined:** show real artefacts (files, steps, data, the actual workflow) instead of robots, brains and glow. Gives up the instant "this is about AI" signal.
+2. **Stand out from the feed:** colours that differ from LinkedIn's own in both light and dark mode. Gives up the soft off-white look.
+3. **One idea, one glance:** every slide carries one point, made visible with a mini chart or visual where it helps. Gives up dense, text-heavy slides.
+4. **Face first:** the author is visible on every piece (headshot and name), because people follow people. Gives up a fully anonymous editorial look.
+5. **Excited, not hyped:** energy comes from colour, scale and contrast, never from hype words, emoji or all caps. Gives up the cheap scroll-stoppers.
 
 ## 3. Research summary
 
