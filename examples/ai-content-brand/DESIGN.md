@@ -89,6 +89,7 @@ This guide lets any person or tool apply the system without the conversation tha
 | T2 | Type family | Onest (Google Fonts, SIL Open Font License, weights 100–900, wide language coverage) for display and text | bespoke | Research: free faces with Roobert's qualities; most readable at phone size | 3 One idea, one glance; 4 Face first (clear, human) | Picked Onest over Schibsted, Gabarito, Rethink and the Plus Jakarta default | 2026-10-24 |
 | T3 | Text face | Onest (same family, per T1) | bespoke | T1 | 3 One idea, one glance | Follows from T1 | 2026-10-24 |
 | T4 | Data or code face | Not needed: numerals set in Onest; monospace disliked | bespoke | User feedback on C1 previews | 3 One idea, one glance | User disliked monospace for stats | 2026-10-24 |
+| T5 | Type scale | Poster scale, ratio about 1.618, on a 1080 x 1350 slide: label 32, body 42, subhead 68, headline 110, poster headline 136. Nothing below 32px, so text stays readable at phone size | bespoke | Research: phones show a 1080px slide at about a third of its size | 3 One idea, one glance; 5 Excited, not hyped | Picked the poster scale | 2026-10-24 |
 
 ## 11. Not yet decided
 - Dark mode (C9): revisit for a website or talks.
