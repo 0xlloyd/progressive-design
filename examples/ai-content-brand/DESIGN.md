@@ -25,10 +25,12 @@ This guide lets any person or tool apply the system without the conversation tha
 
 ## 3. Research summary
 
-- **Subject's story:** [visual traces found and where]
-- **Category conventions:** [what most competitors share]
-- **Position:** [follow or break, and why]
-- **Sources:** [links]
+- **Subject's story:** builder culture (the "0x" hex prefix, monospace, terminal); building in the open with real artefacts (files, steps, workflows); a conviction about owning your context across tools (nodes, links, flows). The London insurance market angle was considered and dropped by the user.
+- **Category conventions (AI creators on LinkedIn):** dark slides with purple or blue gradients and glow; Inter, Montserrat or Poppins from carousel templates; LinkedIn-blue accents; chat screenshots, emoji bullets, 3D robots and brains; headshot and name on every slide.
+- **Position:** break the conventions (user's call). The headshot stays only because it comes from the user's own inspiration (the one-pager header), not as a convention.
+- **Medium findings:** carousels are PDFs at 1080 x 1350 (4:5), usually 6 to 14 slides. LinkedIn's light feed is #F4F2EE and its dark mode is #1B1F23, so off-white or pure black bases blend into the feed; a tinted or coloured base stands out in both. Avoid LinkedIn blue #0A66C2 as the main accent. Body text needs roughly 36px or more on a 1080px slide to read on a phone.
+- **Inspirations:** Elementor website (fonts and colours: heavy friendly grotesk, black and off-white with hot pink #ED01EE, burgundy #620856 / #2A0624, lilac #E5C0FF, acid lime #D5FF45, deep green #00452E). One-pager infographic (header with headline and circular headshot, problem/fix table layout, mini charts and infographic visuals).
+- **Sources:** https://styles.refero.design/style/4bbc63cf-c995-4c56-9873-e7f300f1c9e7 · https://elementor.com/logos/ · https://ruben.substack.com/p/carousels · https://www.oppadu.com/tools/design-systems-site/brand/linkedin.html · https://madegooddesigns.com/free-commercial-use-fonts/
 
 ## 4. Foundations
 
