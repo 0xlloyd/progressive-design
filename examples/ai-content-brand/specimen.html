@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Brand Specimen</title>
+<style>
+  :root {
+    --paper-25: #FFFAEE; --paper-50: #FAF6EC; --paper-100: #F2EADB; --paper-200: #E6DFCF; --paper-300: #D7D0C1;
+    --paper-500: #A39E92; --paper-600: #6B6152; --paper-800: #3D3A34; --ink: #1A1712;
+    --coral-50: #FFEDE9; --coral-200: #FFB3A3; --coral-400: #E68774; --coral-600: #BC4C31; --coral-800: #703D33; --coral-900: #3E1F18;
+    --butter-50: #FAF2D5; --butter-200: #FFE58F; --butter-400: #C3A118; --butter-600: #8C7200; --butter-800: #5D4B00; --butter-900: #332800;
+    --lilac-50: #F3EFFF; --lilac-200: #D9C8FF; --lilac-400: #AD97DB; --lilac-600: #7D66A7; --lilac-800: #52456A; --lilac-900: #2C243B;
+    --color-bg: var(--paper-50); --color-card: var(--paper-25); --color-border: var(--paper-200);
+    --color-text: var(--ink); --color-muted: var(--paper-600); --color-emphasis: var(--coral-600); --color-highlight: var(--butter-200);
+    --font-display: system-ui, sans-serif; --font-text: system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #FFFFFF; color: var(--ink); font-family: var(--font-text); font-size: 16px; line-height: 1.5; }
+  main { max-width: 1080px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; margin: 0 0 16px; letter-spacing: -0.01em; }
+  h1 { font-size: clamp(32px, 6vw, 52px); font-weight: 800; }
+  h2 { font-size: 28px; font-weight: 800; }
+  h3 { font-size: 18px; font-weight: 700; }
+  p { margin: 0 0 12px; max-width: 66ch; }
+  section { padding: 40px 0; border-top: 1px solid var(--paper-200); }
+  .muted { color: var(--color-muted); }
+  .caption { font-size: 13px; color: var(--color-muted); }
+  .hl { background: var(--color-highlight); padding: 0 4px; }
+  .em { color: var(--color-emphasis); }
+  .tag { display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--paper-100); color: var(--paper-800); }
+  .slides { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+  .slide { aspect-ratio: 4 / 5; border-radius: 10px; padding: 22px; display: flex; flex-direction: column; gap: 10px; border: 1px solid var(--paper-200); overflow: hidden; }
+  .slide .hook { font-family: var(--font-display); font-weight: 800; font-size: 24px; line-height: 1.08; margin: 0; letter-spacing: -0.015em; }
+  .slide .body { font-size: 13px; line-height: 1.4; margin: 0; }
+  .who { display: flex; align-items: center; gap: 8px; margin-top: auto; font-size: 12px; }
+  .face { width: 34px; height: 34px; border-radius: 50%; background: var(--ink); flex: none; }
+  .card { background: var(--color-card); border: 1px solid var(--color-border); border-radius: 8px; padding: 12px; font-size: 13px; line-height: 1.4; }
+  .card.key { border: 1.5px solid var(--ink); }
+  .stat { font-family: var(--font-display); font-weight: 800; font-size: 40px; line-height: 1; }
+  .bars { display: flex; align-items: flex-end; gap: 8px; height: 90px; border-bottom: 1px solid var(--paper-300); }
+  .bars i { flex: 1; background: var(--paper-300); border-radius: 3px 3px 0 0; display: block; }
+  .bars i.hero { background: var(--coral-200); }
+  .dots { display: grid; grid-template-columns: repeat(10, 1fr); gap: 4px; }
+  .dots i { aspect-ratio: 1; border-radius: 50%; background: var(--paper-300); display: block; }
+  .dots i.hero { background: var(--coral-200); }
+  .ramp { display: flex; border-radius: 8px; overflow: hidden; border: 1px solid var(--paper-200); margin-bottom: 6px; }
+  .ramp div { flex: 1; height: 56px; display: flex; align-items: flex-end; padding: 4px 6px; font-size: 11px; font-family: ui-monospace, monospace; }
+  .roles { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+  .role { border: 1px solid var(--paper-200); border-radius: 8px; overflow: hidden; background: #fff; }
+  .role .chip { height: 56px; }
+  .role .meta { padding: 10px; font-size: 13px; line-height: 1.4; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { text-align: left; padding: 8px; border-bottom: 1px solid var(--paper-200); vertical-align: top; }
+  .todo { padding: 16px; border: 1px dashed var(--paper-300); border-radius: 8px; color: var(--paper-600); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <p class="caption">AI content brand · Version 0.1 · Colour layer complete · 24 October 2026</p>
+    <h1>I gave Claude my worst Monday and got three hours back.</h1>
+    <p class="muted">A warm, pop-pastel system for AI content on LinkedIn: coral signature, butter highlight, lilac support, warm paper and ink. Typography isn't decided yet, so this page uses the system font as a stand-in.</p>
+  </header>
+
+  <section>
+    <h2>In use</h2>
+    <div class="slides">
+      <div class="slide" style="background: var(--coral-200);">
+        <p class="hook">I gave Claude my worst Monday and got three hours back.</p>
+        <div class="who"><div class="face"></div><span><strong>Your name</strong><br>AI builder</span></div>
+      </div>
+      <div class="slide" style="background: var(--color-bg);">
+        <span class="tag">Step 2</span>
+        <p class="hook" style="font-size: 20px;">Give it the context <span class="em">you'd give a teammate</span></p>
+        <p class="body muted">I feel very strongly that most people are using AI like a search box.</p>
+        <div class="card key">The trick is giving it <span class="hl">the context you'd give a person.</span></div>
+      </div>
+      <div class="slide" style="background: #FFFFFF;">
+        <p class="caption" style="margin: 0;">Where the Monday went</p>
+        <div class="bars"><i style="height: 35%"></i><i style="height: 50%"></i><i style="height: 42%"></i><i class="hero" style="height: 100%"></i></div>
+        <div><span class="stat">3 hrs</span> <span class="caption">saved</span></div>
+        <div class="dots" id="dots"></div>
+        <p class="caption" style="margin: 0;">12 emails drafted · 1 prompt</p>
+      </div>
+      <div class="slide" style="background: var(--color-bg);">
+        <p class="caption" style="margin: 0;">Before and after</p>
+        <div class="card"><strong>Before</strong><br><span class="muted">Ask it a question like a search box.</span></div>
+        <div class="card key"><strong>After</strong><br>Hand it the whole workflow with <span class="hl">full context.</span></div>
+      </div>
+      <div class="slide" style="background: var(--butter-200);">
+        <p class="hook">The trick is giving it the context you'd give a person.</p>
+        <div class="who"><div class="face"></div><span><strong>Your name</strong><br>AI builder</span></div>
+      </div>
+      <div class="slide" style="background: var(--lilac-200);">
+        <p class="hook">Most people use AI like a search box.</p>
+        <div class="who"><div class="face"></div><span><strong>Your name</strong><br>AI builder</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Principles</h2>
+    <ol>
+      <li><strong>Built, not imagined:</strong> real artefacts instead of robots, brains and glow.</li>
+      <li><strong>Stand out from the feed:</strong> colours that differ from LinkedIn's own in light and dark mode.</li>
+      <li><strong>One idea, one glance:</strong> one point per slide, made visible with a mini chart where it helps.</li>
+      <li><strong>Face first:</strong> the author is visible on every piece.</li>
+      <li><strong>Excited, not hyped:</strong> energy from colour, scale and contrast, never hype words or emoji.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Colour</h2>
+    <p class="muted">Pop pastels in two roles: pastel backgrounds for covers and section slides; warm paper with pastel accents for content slides. Coral is the signature.</p>
+
+    <h3>Roles</h3>
+    <div class="roles">
+      <div class="role"><div class="chip" style="background: var(--coral-200)"></div><div class="meta"><strong>Signature · coral</strong><br>#FFB3A3 · covers, banner, the one value in a chart</div></div>
+      <div class="role"><div class="chip" style="background: var(--butter-200)"></div><div class="meta"><strong>Highlighter · butter</strong><br>#FFE58F · key words and numbers, ink on butter 14:1</div></div>
+      <div class="role"><div class="chip" style="background: var(--lilac-200)"></div><div class="meta"><strong>Support · lilac</strong><br>#D9C8FF · secondary covers</div></div>
+      <div class="role"><div class="chip" style="background: var(--coral-600)"></div><div class="meta"><strong>Emphasis · deep coral</strong><br>#BC4C31 · emphasis words in headings, 4.6:1 on paper, not body text</div></div>
+      <div class="role"><div class="chip" style="background: var(--paper-50)"></div><div class="meta"><strong>Page · warm paper</strong><br>#FAF6EC · default content background</div></div>
+      <div class="role"><div class="chip" style="background: #FFFFFF"></div><div class="meta"><strong>Page · white</strong><br>#FFFFFF · data-heavy slides, with paper cards</div></div>
+      <div class="role"><div class="chip" style="background: var(--paper-25)"></div><div class="meta"><strong>Card</strong><br>#FFFAEE with hairline #E6DFCF; ink outline for the one key idea</div></div>
+      <div class="role"><div class="chip" style="background: var(--ink)"></div><div class="meta"><strong>Ink</strong><br>#1A1712 · all text, 16.6:1 on paper</div></div>
+      <div class="role"><div class="chip" style="background: var(--paper-600)"></div><div class="meta"><strong>Muted text</strong><br>#6B6152 · 5.6:1 on paper</div></div>
+    </div>
+
+    <h3 style="margin-top: 32px;">Ramps</h3>
+    <p class="caption">Warm paper (nine steps)</p>
+    <div class="ramp"><div style="background:#FFFAEE">25</div><div style="background:#FAF6EC">50</div><div style="background:#F2EADB">100</div><div style="background:#E6DFCF">200</div><div style="background:#D7D0C1">300</div><div style="background:#A39E92">500</div><div style="background:#6B6152;color:#fff">600</div><div style="background:#3D3A34;color:#fff">800</div><div style="background:#1A1712;color:#fff">ink</div></div>
+    <p class="caption">Coral</p>
+    <div class="ramp"><div style="background:#FFEDE9">50</div><div style="background:#FFB3A3">200</div><div style="background:#E68774">400</div><div style="background:#BC4C31;color:#fff">600</div><div style="background:#703D33;color:#fff">800</div><div style="background:#3E1F18;color:#fff">900</div></div>
+    <p class="caption">Butter</p>
+    <div class="ramp"><div style="background:#FAF2D5">50</div><div style="background:#FFE58F">200</div><div style="background:#C3A118">400</div><div style="background:#8C7200;color:#fff">600</div><div style="background:#5D4B00;color:#fff">800</div><div style="background:#332800;color:#fff">900</div></div>
+    <p class="caption">Lilac</p>
+    <div class="ramp"><div style="background:#F3EFFF">50</div><div style="background:#D9C8FF">200</div><div style="background:#AD97DB">400</div><div style="background:#7D66A7;color:#fff">600</div><div style="background:#52456A;color:#fff">800</div><div style="background:#2C243B;color:#fff">900</div></div>
+
+    <h3 style="margin-top: 32px;">Rules</h3>
+    <ul>
+      <li><strong>Covers use a pastel background.</strong> Only the cover shows in the feed, and LinkedIn's own feed is warm off-white (#F4F2EE) or neutral dark (#1B1F23), so a pastel cover stands out in both.</li>
+      <li><strong>Pastels are fills, never text.</strong> They're too light to read on paper; use ink on them, and deep coral when a word needs colour.</li>
+      <li><strong>One ink-outlined card per slide.</strong> The outline marks the single idea that matters.</li>
+      <li><strong>Charts: one coral value, everything else paper grey.</strong> The chart should make one point at a glance.</li>
+      <li><strong>Good versus bad without red and green.</strong> "Before" sits in a muted hairline card; "after" in an ink-outlined card with butter on the winning phrase.</li>
+      <li><strong>No dark slides on LinkedIn.</strong> Revisit when a website or talks need them.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Typography</h2>
+    <div class="todo">Not yet decided. Next up: type strategy, display and text faces (free fonts only). Noted: monospace for stats was disliked.</div>
+  </section>
+  <section>
+    <h2>Space, shape, components, motion, imagery and voice</h2>
+    <div class="todo">Not yet decided.</div>
+  </section>
+
+</main>
+<script>
+  const d = document.getElementById('dots');
+  for (let i = 0; i < 30; i++) { const e = document.createElement('i'); if (i < 9) e.className = 'hero'; d.appendChild(e); }
+</script>
+</body>
+</html>
