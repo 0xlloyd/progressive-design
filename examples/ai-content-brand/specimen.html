@@ -71,10 +71,10 @@
   .bars { display: flex; align-items: flex-end; gap: 28px; height: 380px; border-bottom: 3px solid var(--paper-300); }
   .bars div { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; gap: 10px; font-size: var(--s-label); }
   .bars i { display: block; width: 100%; background: var(--paper-300); border-radius: 10px 10px 0 0; }
-  .bars .hero i { background: var(--coral-200); }
+  .bars .hero i { background: var(--coral-200); border: 4px solid var(--ink); border-bottom: none; }
   .dots { display: grid; grid-template-columns: repeat(10, 1fr); gap: 14px; }
   .dots i { aspect-ratio: 1; border-radius: 50%; background: var(--paper-300); display: block; }
-  .dots i.hero { background: var(--coral-200); }
+  .dots i.hero { background: var(--coral-200); box-shadow: inset 0 0 0 4px var(--ink); }
   .icons { display: flex; gap: 56px; }
   .icons div { display: flex; flex-direction: column; align-items: center; gap: 16px; font-size: var(--s-label); }
   .icons i { font-size: 96px; }
@@ -283,7 +283,7 @@
 
   <section>
     <h2>Infographic kit</h2>
-    <p class="muted">One chart per slide, labelled directly, with coral marking the point the headline makes. No pie charts, 3D or gradients.</p>
+    <p class="muted">One chart per slide, labelled directly, with coral outlined in ink marking the point the headline makes, so it still stands out in grayscale. No pie charts, 3D or gradients.</p>
     <div class="kit">
       <div class="frame"><div class="slide grid-bg" style="background-color: var(--white); justify-content: center;">
         <p class="t-label">Dot grid · share of the week</p>

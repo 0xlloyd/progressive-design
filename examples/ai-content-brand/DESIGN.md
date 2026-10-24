@@ -151,13 +151,13 @@ LinkedIn carousels are static, so components are slide templates and the parts t
 
 A small, reusable kit of mini charts, each making one point.
 
-- **Bar:** 3 to 5 bars, one coral, the rest paper grey #D7D0C1, 10px top radius, no axis lines except a 3px baseline; direct labels at 32px.
-- **Dot grid (waffle):** 10 columns, coral dots for the share that matters, grey for the rest; label the count directly.
+- **Bar:** 3 to 5 bars, one coral with a 4px ink outline, the rest paper grey #D7D0C1, 10px top radius, no axis lines except a 3px baseline; direct labels at 32px.
+- **Dot grid (waffle):** 10 columns, ink-outlined coral dots for the share that matters, grey for the rest; label the count directly.
 - **Line:** a 6px grey line with a coral dot on the point that matters and a 32px label beside it; no gridlines beyond the graph paper.
 - **Step bars with people icons** (from the one-pager): grey steps growing left to right, the last in coral, with Phosphor person icons above.
 - **Checklist:** see the checklist slide.
 - **Icon group:** two to four Phosphor icons in a row with 32px labels, for a process or set of tools.
-- **Rules:** one chart per slide; label data directly rather than with legends; no 3D, no gradients, no pie charts (hard to compare at phone size); the coral element must be the point of the slide's headline.
+- **Rules:** one chart per slide; label data directly rather than with legends; no 3D, no gradients, no pie charts (hard to compare at phone size); the coral element must be the point of the slide's headline, and always carries a 4px ink outline because coral and paper grey have almost the same lightness and would merge in grayscale or for colour-blind readers.
 
 ### Graph-paper grid (from the one-pager inspiration)
 
@@ -183,7 +183,7 @@ A small, reusable kit of mini charts, each making one point.
 | C7 | Semantic roles | Page: paper #FAF6EC by default; white #FFFFFF page variant for data-heavy or infographic slides (cards switch to paper #FAF6EC). Cards: #FFFAEE with hairline #E6DFCF for everyday content; ink-outlined (4px #1A1712 on a 1080px slide, about 1.5px on a phone) for the single key takeaway, checklist or fix. Text: ink #1A1712, muted #6B6152, deep coral #BC4C31 for emphasis, butter #FFE58F highlight | bespoke | Combination of options 2, 3 and 5; ink outline from Elementor's black and white edge | 3 One idea, one glance (the ink outline always marks the one idea) | Wanted both page colours and both card styles, with clear jobs | 2026-10-24 |
 | C8 | Status colours (good versus bad) | No status hues. "Before" or "bad": muted hairline card with muted text. "After" or "good": ink-outlined card with butter highlight on the winning phrase. Symbols optional | bespoke | Reuses C5 highlighter and C7 outline | 3 One idea, one glance; 5 Excited, not hyped | Picked option 5; avoids a "bad" rose sitting next to the coral signature | 2026-10-24 |
 | C9 | Dark slides | No dark slides for LinkedIn; always light. Revisit dark mode when a website or talks need it | bespoke | LinkedIn shows images as designed in both feed modes | 3 One idea, one glance (simplicity) | Picked option 2 | 2026-10-24 |
-| C10 | Chart palette | Coral #FFB3A3 for the one value that matters; every other series in paper grey #D7D0C1; gridlines and axes #D7D0C1 | bespoke | Principle 3 and the C1/C4 choices | 3 One idea, one glance | Picked option 2 | 2026-10-24 |
+| C10 | Chart palette | Coral #FFB3A3 for the one value that matters (with a 4px ink outline, added at the final grayscale check); every other series in paper grey #D7D0C1; gridlines and axes #D7D0C1 | bespoke | Principle 3 and the C1/C4 choices | 3 One idea, one glance | Picked option 2 | 2026-10-24 |
 | T1 | Type strategy | One characterful grotesk family for everything; weight contrast does the work (heavy headlines, regular body). No monospace | bespoke | Elementor uses one family (Roobert) throughout | 3 One idea, one glance; 5 Excited, not hyped | Picked option 2; earlier disliked monospace for stats | 2026-10-24 |
 | T2 | Type family | Onest (Google Fonts, SIL Open Font License, weights 100–900, wide language coverage) for display and text | bespoke | Research: free faces with Roobert's qualities; most readable at phone size | 3 One idea, one glance; 4 Face first (clear, human) | Picked Onest over Schibsted, Gabarito, Rethink and the Plus Jakarta default | 2026-10-24 |
 | T3 | Text face | Onest (same family, per T1) | bespoke | T1 | 3 One idea, one glance | Follows from T1 | 2026-10-24 |
@@ -234,4 +234,5 @@ A small, reusable kit of mini charts, each making one point.
 ## 12. Inspirations and changelog
 | Date | Change | Inspiration | Decisions affected |
 |---|---|---|---|
+| 2026-10-24 | Final check: ink outline added to the coral chart value so it survives grayscale | Final check | C10, L1 |
 | 2026-10-24 | System created (colour and type chosen by the user; remaining layers delegated) | Elementor website and screenshots; one-pager infographic | All |
