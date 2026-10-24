@@ -56,7 +56,7 @@ Defaults shift as tools and training data change, so treat this list as a starti
 
 ## How to label
 
-1. Compare the option with this catalogue and with what a fresh AI tool would produce for the same brief.
+1. Compare the option with this catalogue and with what a fresh AI tool would produce for the same brief. Once the user has made choices, the AI default for the next decision is the most predictable option within that direction (for example, plain black for an impact slide in a pastel palette), not the generic default from this list, because every option shown must stay cohesive with what's already decided.
 2. If it matches and has no project-specific source, label it **AI default**.
 3. If it matches but also has a genuine source (the brand already owns that colour, the inspiration uses that face), label it **bespoke** and name the source, noting that it resembles a common default.
 4. Never present a default as bespoke to make an option look better.

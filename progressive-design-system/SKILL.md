@@ -49,7 +49,7 @@ Revise them until the user approves them, then use them as the yardstick for eve
 ## Decision loop
 
 Work through the decisions in `references/decision-map.md` one at a time, in its order, because each choice narrows the next and a system built decision by decision stays coherent.
-For each decision, show five options by default and more when the user asks, making sure at least one is the AI default (checked against `references/ai-defaults.md`) so the user can see what they'd get without the skill.
+For each decision, show five options by default and more when the user asks, all cohesive with the decisions already made, and make one of them the AI default within that direction (the most predictable choice an AI tool would make given the choices so far, checked against `references/ai-defaults.md`), so the user can see what they'd get without the skill.
 Give each option a label (AI default or bespoke), its source (the brief, a named inspiration or a research finding), the principle it serves, a one-line rationale, and the practical facts that apply, such as contrast results, licence or language coverage.
 Show options visually wherever the environment allows, such as colour swatches or type samples set in the user's real copy, because design choices are hard to judge from names and hex codes alone.
 Let the user pick one, mix parts of several, edit an option or ask for more, and if none fit, ask what's missing before generating new ones rather than guessing again.
