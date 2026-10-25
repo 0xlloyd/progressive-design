@@ -11,6 +11,8 @@
   2. Load the chosen fonts (a <link> to the font service, or @font-face for self-hosted files).
   3. Replace every [bracketed] placeholder with the user's real copy and decisions.
   4. Delete sections for layers not yet decided, or leave them showing "Not yet decided".
+  5. Show every medium in the brief: web components as assembled pages (nav, hero, footer, forms, states),
+     social templates at their real proportions (draw at full size and scale down), and motion running live.
   The shell is deliberately plain so it never imposes a look: everything visible should come from the tokens.
 -->
 <style>
@@ -97,6 +99,8 @@
   .alert { padding: var(--space-2) var(--space-4); border-left: 4px solid currentColor; margin-bottom: var(--space-2); }
   table { border-collapse: collapse; width: 100%; font-size: var(--size-caption); }
   th, td { text-align: left; padding: var(--space-2); border-bottom: var(--border-width) solid var(--color-border); vertical-align: top; }
+  .motion-demo { animation: demo 2s var(--easing-standard) infinite alternate; }
+  @keyframes demo { from { transform: translateX(0); } to { transform: translateX(200px); } }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
 </head>
@@ -174,7 +178,16 @@
 
   <section id="motion">
     <h2>Motion and interaction</h2>
-    <p class="muted">[Motion character, durations and easing. Press the primary button to feel the standard transition.]</p>
+    <p class="muted">[Motion character, signature motion, durations and easing. Every example here runs live; replace the demo with the system's own motion for each medium.]</p>
+    <div class="card" style="overflow: hidden;">
+      <div class="motion-demo" style="width: 48px; height: 48px; border-radius: var(--radius-sm); background: var(--color-primary);"></div>
+      <p class="caption">[Signature motion: what it is and when it plays.]</p>
+    </div>
+  </section>
+
+  <section id="data">
+    <h2>Data and infographics</h2>
+    <p class="muted">[Chart palette, how the key value is marked without colour alone, chart types in the kit, stat treatment. Use the user's real numbers.]</p>
   </section>
 
   <section id="imagery-voice">
@@ -187,7 +200,7 @@
     <h2>Decision summary</h2>
     <table>
       <thead><tr><th>ID</th><th>Decision</th><th>Choice</th><th>Label</th><th>Source</th></tr></thead>
-      <tbody><tr><td>[C2]</td><td>[Primary colour]</td><td>[value]</td><td>[bespoke / AI default]</td><td>[source]</td></tr></tbody>
+      <tbody><tr><td>[D2]</td><td>[Signature colour]</td><td>[value]</td><td>[bespoke / AI default]</td><td>[source]</td></tr></tbody>
     </table>
     <p class="caption">Full log and reasons in DESIGN.md.</p>
   </section>

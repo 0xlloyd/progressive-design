@@ -41,6 +41,24 @@ Defaults shift as tools and training data change, so treat this list as a starti
 - Fade-and-rise on scroll for every element.
 - Bounce or scale-up on every hover.
 - One duration and easing for everything (around 300ms ease-in-out).
+- Social: static carousels only, or slides that just slide in; typewriter text; confetti and sparkle effects.
+- Animated gradient blobs and glowing borders that move with no meaning.
+
+## Web components
+
+- Sticky white header with logo left, links centred, one filled button right.
+- Pill-shaped primary buttons in the accent colour with a soft shadow.
+- Testimonial carousel of three cards with circular avatars and five stars.
+- Pricing table with three tiers and the middle one raised.
+- Four-column footer of link lists with social icons and a newsletter field.
+- Toasts in the bottom-right corner, skeleton loaders in light grey.
+
+## Social and carousel templates
+
+- Cover with a big emoji or 3D icon, centred title and "swipe" arrow.
+- Every slide the same layout with a number in a circle.
+- Chat-screenshot slides with no framing.
+- End slide saying "Follow for more" with a repost icon.
 
 ## Imagery and icons
 

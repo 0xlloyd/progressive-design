@@ -1,105 +1,142 @@
 # Decision map
 
-Work through these decisions in order. Each one lists what is decided, what it depends on and the tokens it produces, so the decision loop covers the whole system and update mode can re-check every decision.
-Skip a decision only when the brief makes it irrelevant (for example, no data visualisation), and mark it "not needed" in the decision log rather than leaving it out.
+The rounds in SKILL.md each settle a bundle of decisions at once. This map lists, per round, what a direction must decide and how to render it, with modules for each medium. Use the modules that match the media in the brief; a system for a website and LinkedIn uses both.
+Every decision a round settles goes into the decision log with its ID, even when the bundle settled it implicitly, so update mode can re-check it later. Anything not needed is logged as "not needed" rather than left out.
 
 ## Contents
 
-1. Foundations: colour
-2. Foundations: typography
-3. Foundations: space and layout
-4. Foundations: shape and elevation
-5. Components
-6. Motion and interaction
-7. Imagery and voice
-8. Layers from inspirations
+1. Round 1: Direction
+2. Round 2: Foundations
+3. Round 3: Components (web, social, slides, app, print)
+4. Round 4: Motion (web, social, video)
+5. Round 5: Imagery and voice
+6. Round 6: Data and infographics
+7. Derived details (the review batch)
+8. Extra layers from inspirations
 
-## 1. Foundations: colour
+## 1. Round 1: Direction
 
-| ID | Decision | Depends on | Tokens |
-|---|---|---|---|
-| C1 | Colour strategy: how much colour the system uses (mostly neutral with one accent, two-colour, full palette) | Principles, category map | none (recorded in DESIGN.md) |
-| C2 | Primary brand colour | C1 | `color.brand.primary` |
-| C3 | Neutral family: warm, cool or tinted toward the primary | C2 | `color.neutral.*` |
-| C4 | Neutral ramp: number of steps and lightness spacing | C3, medium | `color.neutral.50`–`950` |
-| C5 | Secondary or accent colours, if any | C1, C2 | `color.brand.secondary`, `color.brand.accent` |
-| C6 | Ramps for brand colours | C2, C5 | `color.brand.<name>.50`–`950` |
-| C7 | Semantic roles: background, surface, text, muted text, border, focus | C4, C6 | `color.bg`, `color.surface`, `color.text`, `color.text-muted`, `color.border`, `color.focus` |
-| C8 | Status colours: success, warning, error, info, tuned to the palette | C2, C3 | `color.status.*` |
-| C9 | Dark mode: whether, and how roles map | C7, medium | `color.*` dark set |
-| C10 | Data visualisation palette, if needed | C6, C8 | `color.data.*` |
+Each of the ten directions is a full mockup in the main medium (a homepage for a website, a cover plus one content slide for social), combining:
 
-## 2. Foundations: typography
+| ID | Decision |
+|---|---|
+| D1 | Colour strategy: how much colour, and where it lives (base, accents, backgrounds) |
+| D2 | Signature colour |
+| D3 | Type character: one family or a pairing, and its personality |
+| D4 | Shape language: square, soft, pill, organic, outlined or flat |
+| D5 | Density and layout character: airy or dense, grid or editorial, centred or asymmetric |
+| D6 | Motion character: still, subtle, expressive or kinetic |
+| D7 | Convention stance: which category conventions are broken and which are followed on purpose |
 
-| ID | Decision | Depends on | Tokens |
-|---|---|---|---|
-| T1 | Type strategy: one family, a pair, or a superfamily | Principles, brief | none |
-| T2 | Display or headline face | T1, subject story | `font.family.display` |
-| T3 | Text or body face | T2 | `font.family.text` |
-| T4 | Data or code face, if needed | T3 | `font.family.mono` |
-| T5 | Type scale: base size and ratio, tested in real copy | T2, T3, medium | `font.size.*` |
-| T6 | Weights in use and what each is for | T2–T4 | `font.weight.*` |
-| T7 | Line height and letter-spacing per size | T5 | `font.lineHeight.*`, `font.letterSpacing.*` |
-| T8 | Text styles: heading levels, body, caption, label, numerals | T5–T7 | `typography.*` composites |
-| T9 | Typographic details: numerals (tabular or proportional), case, measure (line length) | T8 | recorded in DESIGN.md |
+Spread the ten directions widely: different colour strategies, type characters and motion characters, at least two that use something from the art-of-the-possible research, and one AI default within the brief.
 
-## 3. Foundations: space and layout
+## 2. Round 2: Foundations
 
-| ID | Decision | Depends on | Tokens |
-|---|---|---|---|
-| S1 | Density: compact, comfortable or airy | Principles, medium | none |
-| S2 | Base unit and spacing scale | S1, T5 | `space.*` |
-| S3 | Grid: columns, gutters, margins, max width | S2, medium | `layout.*` |
-| S4 | Breakpoints, if screen-based | S3 | `breakpoint.*` |
-| S5 | Layout character: symmetry, alignment, how sections are composed | Principles, category map | recorded in DESIGN.md |
+Each direction is a complete specimen: palette with ramps and roles, type scale in real copy, spacing and shape shown on a sample layout.
 
-## 4. Foundations: shape and elevation
-
-| ID | Decision | Depends on | Tokens |
-|---|---|---|---|
-| E1 | Corner radius scale (including square, if chosen) | Principles, inspirations | `radius.*` |
-| E2 | Border weights and styles | E1, C7 | `border.*` |
-| E3 | Elevation approach: shadows, tonal layers, borders or none | E2, C9 | `shadow.*` or `color.surface.*` |
-| E4 | Texture or surface treatment, if any (grain, paper, pattern) | Inspirations | recorded in DESIGN.md, assets |
-
-## 5. Components
-
-Decide the shared character first, then each component in the order the user needs them. For each component, decide anatomy, variants, states (default, hover, focus, active, disabled, error, loading) and the tokens it uses.
-
-| ID | Decision | Depends on |
+| ID | Decision | Tokens |
 |---|---|---|
-| K1 | Component character: how foundations combine (for example flat and bordered, or solid and filled) | Foundations |
-| K2 | Buttons and links | K1 |
-| K3 | Form inputs: text fields, selects, checkboxes, radios, toggles | K1 |
-| K4 | Cards and containers | K1, E3 |
-| K5 | Navigation: header, menus, tabs, breadcrumbs | K1, S3 |
-| K6 | Feedback: alerts, toasts, empty states, loading | K1, C8 |
-| K7 | Data display: tables, lists, tags, badges, charts | K1, T9, C10 |
-| K8 | Overlays: modals, drawers, tooltips | K1, E3 |
-| K9 | Any components specific to the product | K1 |
+| F1 | Palette: signature, supporting colours, neutrals, built in OKLCH | `color.brand.*`, `color.neutral.*` |
+| F2 | Ramps: steps per colour | `color.*.50`–`900` |
+| F3 | Roles: page, surface, card, border, text, muted text, emphasis, highlight, focus | `color.bg`, `color.text`… |
+| F4 | Status and data colours, or a way to show good and bad without them | `color.status.*`, `color.data.*` |
+| F5 | Dark theme: whether, and how roles map | dark set |
+| F6 | Type family or families, with licence and language coverage | `font.family.*` |
+| F7 | Type scale per medium (web uses rem; social uses px on the slide size) | `font.size.*` |
+| F8 | Weights, line heights, letter-spacing, case and punctuation rules | `font.*` |
+| F9 | Spacing scale and grid per medium | `space.*`, `layout.*` |
+| F10 | Radius, borders and elevation | `radius.*`, `border.*`, `shadow.*` |
+| F11 | Texture or surface treatment, if any | recorded in DESIGN.md |
 
-## 6. Motion and interaction
+Check contrast for every role pairing before showing a direction.
 
-| ID | Decision | Depends on | Tokens |
-|---|---|---|---|
-| M1 | Motion character: none, subtle, expressive | Principles | none |
-| M2 | Duration scale | M1 | `duration.*` |
-| M3 | Easing curves and what each is for | M1 | `easing.*` (cubicBezier) |
-| M4 | State changes: hover, press, focus style | M2, M3, C7 | recorded in DESIGN.md |
-| M5 | Transitions and entrances: what moves, what never moves | M1 | recorded in DESIGN.md |
-| M6 | Reduced-motion behaviour | M5 | recorded in DESIGN.md |
+## 3. Round 3: Components
 
-## 7. Imagery and voice
+Each direction is the whole kit assembled into real pages or sequences, with states shown.
 
-| ID | Decision | Depends on |
+### Web module
+
+| ID | Component | States and variants to show |
 |---|---|---|
-| I1 | Photography style, if used: subject, light, framing, treatment | Principles, subject story |
-| I2 | Illustration style, if used | Principles, inspirations |
-| I3 | Iconography: style, stroke, corner, grid, source | E1, T6 |
-| I4 | Graphic devices: patterns, shapes, motifs drawn from the subject | Subject story |
-| I5 | Voice: personality, vocabulary, words to use and avoid | Brief, category map |
-| I6 | Copy patterns: headlines, buttons, errors, empty states | I5 |
+| W1 | Navigation: header, menu, mobile menu | default, active page, open menu, scrolled |
+| W2 | Hero | with image or media, with motion |
+| W3 | Buttons and links | primary, secondary, ghost; hover, focus, pressed, disabled, loading |
+| W4 | Forms: text field, select, checkbox, radio, toggle | empty, filled, focus, error, disabled |
+| W5 | Cards and content blocks | default, hover, featured |
+| W6 | Lists and tables | header, row hover, empty, mobile layout |
+| W7 | Feedback: alerts, toasts, empty states, loading, skeletons | each status |
+| W8 | Overlays: modal, drawer, tooltip, popover | open, focus trapped |
+| W9 | Footer | full and compact |
+| W10 | Tags, badges, avatars, breadcrumbs, pagination, tabs | default, active |
+| W11 | Breakpoints and responsive behaviour | phone, tablet, desktop |
 
-## 8. Layers from inspirations
+### Social module
 
-Add one row per layer the user accepted from an inspiration (for example a grid system, texture or illustration language). For each, decide what it is, where it applies, the rules and the tokens or assets it needs, and record its source inspiration.
+| ID | Template | Notes |
+|---|---|---|
+| S1 | Cover (carousel and single post) | the only slide seen in the feed |
+| S2 | Content slide (step, point, quote) | |
+| S3 | Data slide | links to round 6 |
+| S4 | Comparison slide (before and after, do and don't) | |
+| S5 | Checklist or list slide | |
+| S6 | End slide with one ask | |
+| S7 | Author block, footer and progress | |
+| S8 | Profile banner and photo treatment | respect the platform's photo overlap |
+| S9 | Video and motion post frame | links to round 4 |
+
+Use each platform's current sizes (for LinkedIn carousels, PDF pages at 1080 x 1350).
+
+### Slides, app and print modules
+
+- **Slides:** title, section, content, data, quote, end; speaker-safe areas.
+- **App:** tab bar, top bar, list rows, sheets, inputs, empty and error states, platform conventions to keep or break.
+- **Print:** formats, bleed and safe areas, CMYK proofing notes for high-chroma colours.
+
+## 4. Round 4: Motion
+
+Each direction runs live (CSS or SVG animation in the preview, or a frame strip when live preview isn't possible). "Still" is one of the ten, never the default.
+
+| ID | Decision | Tokens |
+|---|---|---|
+| M1 | Motion character and what motion means in the system (state change, story, delight) | recorded in DESIGN.md |
+| M2 | Durations | `duration.*` |
+| M3 | Easing curves, including springs if used | `easing.*` |
+| M4 | Web: micro-interactions (hover, press, focus), page and view transitions, scroll-driven reveals | recorded in DESIGN.md |
+| M5 | Social: animated carousels or video carousels, kinetic type, animated charts, loop length, export format (MP4, GIF, Lottie) | recorded in DESIGN.md |
+| M6 | Signature motion: one movement people recognise the brand by | recorded in DESIGN.md |
+| M7 | What never moves | recorded in DESIGN.md |
+| M8 | Reduced-motion behaviour | recorded in DESIGN.md |
+
+## 5. Round 5: Imagery and voice
+
+Each direction is shown in place on the round 3 components.
+
+| ID | Decision |
+|---|---|
+| I1 | Photography: subject, light, framing, treatment |
+| I2 | Illustration, 3D or generative imagery, if any, and its rules |
+| I3 | Iconography: set, weight, size, licence |
+| I4 | Graphic devices: patterns, shapes, motifs from the subject's story |
+| I5 | Voice: personality, vocabulary, words to use and avoid |
+| I6 | Copy patterns: headlines, buttons, errors, empty states, hooks, calls to action |
+
+## 6. Round 6: Data and infographics
+
+Each direction is a set of charts and stats using the user's real numbers.
+
+| ID | Decision |
+|---|---|
+| G1 | Chart palette and how the key value is marked (never by colour alone) |
+| G2 | Chart types in the kit (bar, line, dot grid, step, table, diagram) and the ones ruled out |
+| G3 | Labelling: direct labels or legends, number formatting |
+| G4 | Stat treatment: size, weight, colour, units |
+| G5 | Diagrams and flows: shapes, connectors, annotation style |
+| G6 | Motion for data, if any: how charts build or update |
+
+## 7. Derived details (the review batch)
+
+After the rounds, derive and show together, for review rather than one by one: exact ramp steps, every component state, durations and easings per interaction, breakpoints, spacing per component, focus styles, export settings per medium. Log each with source "derived from" the round decision it follows from.
+
+## 8. Extra layers from inspirations
+
+Add one row per layer the user accepted from an inspiration (for example a texture, grid or illustration language). Give it its own round of ten directions when it changes the look, or settle it in the derived batch when it's small, and record its source inspiration.

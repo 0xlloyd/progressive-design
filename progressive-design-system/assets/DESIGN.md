@@ -45,10 +45,13 @@ This guide lets any person or tool apply the system without the conversation tha
 [Radius scale, borders, elevation approach, any texture.]
 
 ## 5. Components
-[For each component: anatomy, variants, states, tokens used, do's and don'ts.]
+[Grouped by medium (web, social, slides, app, print). For each component: anatomy, variants, states, tokens used, do's and don'ts.]
 
 ## 6. Motion and interaction
-[Character, durations, easing, state changes, what never moves, reduced-motion behaviour.]
+[Character and what motion means in the system. Signature motion. Durations and easings with uses. Per medium: web micro-interactions, scroll and page transitions; social animated carousels, video and export formats. What never moves. Reduced-motion behaviour.]
+
+## 6b. Data and infographics
+[Chart palette and how the key value is marked without relying on colour alone. Chart types in the kit and ones ruled out. Labels, number formats, stat treatment, diagram style, data motion.]
 
 ## 7. Imagery and voice
 [Photography, illustration, icons, graphic devices, voice, words to use and avoid, copy patterns.]
@@ -63,9 +66,11 @@ This guide lets any person or tool apply the system without the conversation tha
 
 ## 10. Decision log
 
+One row per decision a round settled, including those a bundle settled implicitly. Derived details use the source "derived from" plus the decision ID.
+
 | ID | Decision | Choice | Label | Source | Principle | User's reason | Date |
 |---|---|---|---|---|---|---|---|
-| C2 | Primary brand colour | [value] | bespoke / AI default | [brief, inspiration or research] | [principle] | [reason, if given, or "delegated"] | [date] |
+| D2 | Signature colour | [value] | bespoke / AI default | [brief, inspiration or research] | [principle] | [reason, if given, or "delegated"] | [date] |
 
 ## 11. Not yet decided
 - [Decision IDs and layers still open]

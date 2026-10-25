@@ -1,6 +1,6 @@
 # Research standard
 
-Use these seven criteria to research a design system the way a senior designer would, before proposing any options.
+Use these eight criteria to research a design system the way a senior designer would, before proposing any options.
 Each criterion gives the generic habit to avoid, what good practice does instead, and why it matters, so the research can be adapted to any project.
 
 ## 1. The subject's own story
@@ -15,7 +15,7 @@ Each criterion gives the generic habit to avoid, what good practice does instead
 - **Generic habit:** ignoring competitors, or quietly imitating them.
 - **Good practice:** collect four to eight others in the same category (direct competitors, plus one or two the user admires). For each, note colour, type, imagery, layout, shape and tone. Name the conventions most of them share and the space nobody occupies.
 - **Why:** without a map, work drifts toward category norms because everyone draws on the same references.
-- **The user's call:** experts disagree on when to break conventions. Breaking helps when the category looks the same and the brand can back up being different; following helps when trust depends on familiarity or the difference lies elsewhere (service, price). Present both and let the user decide.
+- **The user's call:** experts disagree on when to break conventions. Breaking helps when the category looks the same and the brand can back up being different; following helps when trust depends on familiarity or the difference lies elsewhere (service, price). Breaking them is the default stance in this skill; following one must be the user's deliberate choice, logged with its reason.
 
 ## 3. Type chosen from purpose
 
@@ -49,6 +49,17 @@ Each criterion gives the generic habit to avoid, what good practice does instead
 - **Good practice:** draw references from outside design galleries (archives, signage, print, film, architecture, nature, the subject's world). Label every option as AI default or bespoke using `references/ai-defaults.md`, and trace each bespoke option to the brief, a named inspiration or a research finding.
 - **Why:** telling an AI tool to avoid defaults only moves it to the next most common choice. A stated source is what makes an option specific to this project.
 
+## 8. The art of the possible
+
+- **Generic habit:** designing for the medium as it was a few years ago: static images, two web-safe weights, sRGB only, fade-in animations.
+- **Good practice:** for each medium in the brief, look up what current technology supports and what the most inventive work in and outside the category is doing, then turn the strongest ideas into directions. Examples to check, not a fixed list:
+  - **Web:** variable fonts and optical sizes, wide-gamut (Display P3) colour, container queries, scroll-driven animation, view transitions, `:has()`-driven states, SVG and canvas generative patterns, WebGL and 3D, live data.
+  - **Social:** animated and video carousels, kinetic typography, animated charts, loops, Lottie and short motion posts, platform features that change how content is seen.
+  - **Slides and video:** motion templates, data that builds on screen, variable-font animation.
+  - **Imagery:** generative or procedural patterns built from the brand's own shapes, 3D renders, AI-assisted imagery where the brief allows it.
+- **Why:** a system that only uses what everyone already uses can't trace its own trail. Offering what's possible lets the user choose ambition knowingly instead of defaulting to static.
+- **Check:** for each idea, note browser or platform support, file size, accessibility (reduced motion, contrast, alt text) and how hard it is to produce every week, so the user sees the cost before choosing.
+
 ## Sharing the research
 
-Summarise in a few short sections: the subject's story (what has a visual trace), the category map (conventions and gaps), type directions (with licence notes), colour directions (with contrast notes) and open questions for the user. List sources.
+Summarise visually in a few short sections: the subject's story (what has a visual trace), the category map (conventions to break and any to keep), type and colour directions (with licence and contrast notes), the art of the possible for each medium (with cost notes) and open questions for the user. List sources.

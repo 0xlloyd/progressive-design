@@ -6,7 +6,7 @@ Commands
   pair TEXT BACKGROUND       WCAG 2 contrast, APCA Lc and grayscale difference for one pair.
   ramp HUE CHROMA            Build an OKLCH ramp at one hue, clamped to sRGB.
   tokens FILE.json           Check every text/background pair in a W3C (DTCG) tokens file,
-                             plus a grayscale check across all colour roles.
+                             plus a grayscale check on colours that must be told apart.
 
 Colours can be written as #rgb, #rrggbb, "oklch(0.62 0.14 40)", "oklch(62% 0.14 40)"
 or "0.62,0.14,40" (OKLCH L, C, H).
@@ -16,6 +16,10 @@ Options
   --pairs FILE.json          For `tokens`: explicit pairs, e.g.
                              [{"text": "color.text", "bg": "color.bg", "use": "body"}].
                              "use" is body, large or ui. Without it, pairs are guessed from names.
+  --distinguish FILE.json    For `tokens`: groups of colours that must be told apart in grayscale,
+                             e.g. [["color.data.point", "color.data.other"], ["color.card", "color.bg"]].
+                             Without it, chart and status colours are grouped by name, plus each
+                             text/background pair. Ramp steps are never compared with each other.
   --steps N                  For `ramp`: number of steps (default 11).
 
 Exit code is 1 when any checked pair fails its WCAG threshold, so the script can gate a build.
@@ -300,15 +304,31 @@ def guess_pairs(colors):
     return pairs
 
 
-def grayscale_clashes(colors, threshold=0.04):
-    """Pairs of distinct-hue colours that become near-identical in grayscale."""
-    names = sorted(colors)
-    clashes = []
-    for i, a in enumerate(names):
-        for b in names[i + 1:]:
-            la, lb = colors[a], colors[b]
-            if abs(la[0] - lb[0]) < threshold and math.hypot(la[1] - lb[1], la[2] - lb[2]) > 0.06:
-                clashes.append((a, b, abs(la[0] - lb[0])))
+DISTINGUISH_HINTS = ("data", "chart", "series", "status", "success", "warning", "error", "danger", "info")
+
+
+def guess_distinguish_groups(colors):
+    """Colours that must be told apart: chart series and status colours, by name."""
+    group = [n for n in colors if any(h in n.lower() for h in DISTINGUISH_HINTS)]
+    return [group] if len(group) > 1 else []
+
+
+def grayscale_clashes(colors, groups, threshold=0.04):
+    """Within each group of colours that must be told apart, pairs that look
+    near-identical in grayscale. Ramp steps and unrelated colours are never
+    compared, because they never need to be distinguished from each other."""
+    clashes, seen = [], set()
+    for group in groups:
+        names = [n for n in group if n in colors]
+        for i, a in enumerate(names):
+            for b in names[i + 1:]:
+                key = tuple(sorted((a, b)))
+                if key in seen:
+                    continue
+                seen.add(key)
+                gap = abs(colors[a][0] - colors[b][0])
+                if gap < threshold:
+                    clashes.append((a, b, gap))
     return clashes
 
 
@@ -380,14 +400,21 @@ def cmd_tokens(args):
     if not any_note:
         print("  all colours fit sRGB")
     print()
-    clashes = grayscale_clashes(colors)
-    print("Grayscale:")
+    if args.distinguish:
+        with open(args.distinguish, encoding="utf-8") as f:
+            groups = json.load(f)
+    else:
+        groups = guess_distinguish_groups(colors)
+        # A card or text must also stand apart from the page it sits on.
+        groups += [[p["text"], p["bg"]] for p in pairs]
+    clashes = grayscale_clashes(colors, groups)
+    print("Grayscale (only colours that must be told apart):")
     if clashes:
         for a, b, gap in clashes:
             print(f"  {a} and {b} look almost the same in grayscale (lightness gap {gap:.3f}); "
-                  f"don't rely on hue alone to tell them apart")
+                  f"add a second cue such as an outline, pattern or label")
     else:
-        print("  no different-hue colours collapse together in grayscale")
+        print("  every group stays distinguishable in grayscale")
     print()
     print(f"{len(pairs)} pairs checked, {failed} failing WCAG.")
     return 1 if failed else 0
@@ -417,6 +444,7 @@ def main(argv=None):
     s = sub.add_parser("tokens")
     s.add_argument("file")
     s.add_argument("--pairs")
+    s.add_argument("--distinguish")
     s.set_defaults(fn=cmd_tokens)
 
     args = p.parse_args(argv)
