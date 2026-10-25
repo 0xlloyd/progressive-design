@@ -51,7 +51,7 @@ Revise them until the user approves, then use them as the yardstick for every di
 Each round shows ten complete directions at once, more on request, and each direction is a bundle that answers every decision in that round together, so one choice settles many details.
 Render every direction on real elements of the user's medium using their real copy (a hero, nav and footer for a website; a cover and content slide for a carousel; a frame sequence for motion), never as names, hex codes or text alone, because design choices can't be judged without seeing them.
 Keep every direction cohesive with what's already decided and check it against every earlier rule before showing it, such as contrast, "pastels are never text" or a chosen type scale, so the user is never offered something that breaks the system.
-Make one direction the AI default within the chosen direction (the most predictable result an AI tool would produce given the choices so far, checked against `references/ai-defaults.md`), and label every other direction bespoke with its source and the principle it serves.
+Make one direction the AI default within what's already decided (in the first round, within the brief): the most predictable result an AI tool would produce, checked against `references/ai-defaults.md`; label every other direction bespoke with its source and the principle it serves.
 Let the user pick one, mix parts of several, ask for more, or ask you to decide; if none fit, ask what's missing in one question before generating again.
 Record each choice in the decision log in DESIGN.md (started from `assets/DESIGN.md`) as soon as it's made, with every detail the bundle settled, its label, source and the user's reason, marking anything the user asked you to decide as "delegated".
 After each round, update the specimen page so the user sees the system come together.
@@ -90,7 +90,7 @@ If the Claude Design System type isn't available, deliver the other three and sa
 ## Final check
 
 Before delivering, run `scripts/color_check.py` on every text and background pair and on the colours that must be told apart (chart series, status colours, a card against its page), and for anything that fails, offer two or three fixes to choose from.
-Then render the specimen at real viewing sizes (a phone, a desktop browser and each social format at feed size) and look at the result, fixing anything that disappears, overflows or breaks, because problems like a grid too faint to see only show up when rendered.
+Then render the specimen at real viewing sizes (a phone, a desktop browser and each social format at feed size) and look at the result: fix layout bugs such as overflow directly, but for anything that needs a decision changed, such as a grid too faint to see, offer two or three fixes, because these problems only show up when rendered.
 Check that motion respects reduced-motion settings and that the system still reads in grayscale.
 Show the user how many choices are AI defaults or resemble one, so they can confirm each was deliberate, and check that the four outputs use exactly the same values.
 
