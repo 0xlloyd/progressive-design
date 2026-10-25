@@ -28,8 +28,6 @@ Ask for a design system, brand system or visual identity, or share an inspiratio
 
 > I'm launching a small ceramics studio and need a visual identity: colours, fonts, the lot.
 
-A worked example (a LinkedIn brand for AI content) lives in [`examples/ai-content-brand`](examples/ai-content-brand). It was built with the earlier one-decision-at-a-time version of the skill, and its lessons led to the current rounds.
-
 ## Contents
 
 ```
